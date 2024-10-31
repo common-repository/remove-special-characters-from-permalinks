@@ -1,0 +1,35 @@
+{
+  "name": "wpfactory/remove-special-characters-from-permalinks",
+  "type": "wordpress-plugin",
+  "description": "Removes special characters from permalinks",
+  "keywords": [
+    "wordpress",
+    "special",
+    "characters",
+    "permalinks"    
+  ],
+  "license": "MIT",
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/wpcodefactory/wpfactory-promoting-notice"
+    }
+  ],
+  "require": {
+    "wpfactory/wpfactory-promoting-notice": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/classes/"
+    ],
+    "exclude-from-classmap": [
+      "/Tests/",
+      "/test/",
+      "/tests/"
+    ]
+  }
+}
